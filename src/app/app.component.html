@@ -1,0 +1,74 @@
+<!-- <h1>Formato ISO8601:</h1>
+<b>Data convertida para região: </b>{{ minhaData | date : 'full' }}
+
+<br/> <br/>
+
+<b>Data UTC-0: </b>{{ minhaData | date : 'full' : '+0000' }}
+
+<h1>Formato Timestamp:</h1>
+Timestamp para região: {{ 1697922000000 | date : 'full' }}
+
+<br/> <br/>
+
+Timestamp UTC-0: {{ 1697922000000 | date : 'full' : '+0000' }}
+
+<h1>Formato Date Obj</h1>
+<b>Data convertida para região:</b> {{ minhaDataObj | date : 'full' }}
+
+<br/> <br/>
+
+<b>Data UTC-0:</b> {{ minhaDataObj | date : 'full' : '+0000' }} -->
+
+
+<!-- <h1>Formatações:</h1> -->
+
+<!-- 
+"Hoje é Saturday dia 21 de October de 2023":
+"Hoje é Saturday dia 21 de October de 2023 às 18:00":
+"Hoje é Saturday dia 21 de October de 2023 às 18:00 GMT-03:00":
+"Hoje é Saturday dia 21 de October de 2023 às 21:00 GMT+00:00":
+"Data: 21/10/2023 Hora: 18:00 PM": 
+-->
+
+<!-- Curto: {{ '2023-10-21T21:00:00.000Z' | date : 'short' }} <br />
+Médio: {{ '2023-10-21T21:00:00.000Z' | date : 'medium' }} <br />
+Longo: {{ '2023-10-21T21:00:00.000Z' | date : 'long' }} <br />
+Completo: {{ '2023-10-21T21:00:00.000Z' | date : 'full' }} <br />
+
+<br /><br />
+
+<b>"Hoje é Saturday dia 21 de October de 2023":</b>
+<p>{{ '2023-10-21T21:00:00.000Z' | date : "'Hoje é' EEEE 'dia' dd 'de' MMMM 'de' YYYY" }}</p>
+
+<br /><br />
+
+<b>"Hoje é Saturday dia 21 de October de 2023 às 18:00":</b>
+<p>{{ '2023-10-21T21:00:00.000Z' | date : "'Hoje é' EEEE 'dia' dd 'de' MMMM 'de' YYYY 'às' HH:mm" }}</p>
+
+<br /><br />
+
+<b>"Hoje é Saturday dia 21 de October de 2023 às 18:00 GMT-03:00":</b>
+<p>{{ '2023-10-21T21:00:00.000Z' | date : "'Hoje é' EEEE 'dia' dd 'de' MMMM 'de' YYYY 'às' HH:mm zzzz" }}</p>
+
+<br /><br />
+
+<b>"Hoje é Saturday dia 21 de October de 2023 às 21:00 GMT+00:00":</b>
+<p>{{ '2023-10-21T21:00:00.000Z' | date : "'Hoje é' EEEE 'dia' dd 'de' MMMM 'de' YYYY 'às' HH:mm zzzz" : '+0000' }}</p>
+
+<br /><br />
+
+<b>"Data: 21/10/2023 Hora: 18:00 PM":</b>
+<p>{{ '2023-10-21T21:00:00.000Z' | date : "'Data:' dd/MM/YYYY 'Hora:' HH:mm a" }}</p> -->
+
+
+
+
+{{ '2023-10-21T21:00:00.000Z' | date }}
+
+<br/>
+
+{{ '2023-10-21T21:00:00.000Z' | date : 'full' : undefined : 'en-US' }}
+
+<br/>
+
+{{ '2023-10-21T21:00:00.000Z' | date : 'full' : undefined : 'pt-BR' }}
